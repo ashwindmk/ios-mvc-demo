@@ -13,6 +13,7 @@
 		CFDC7A562C679A9700C51F35 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CFDC7A552C679A9700C51F35 /* Base */; };
 		CFDC7A582C679A9900C51F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDC7A572C679A9900C51F35 /* Assets.xcassets */; };
 		CFDC7A5B2C679A9900C51F35 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CFDC7A5A2C679A9900C51F35 /* Base */; };
+		CFDC7A652C679EA200C51F35 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7A642C679EA200C51F35 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CFDC7A572C679A9900C51F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFDC7A5A2C679A9900C51F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFDC7A5C2C679A9900C51F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFDC7A642C679EA200C51F35 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		CFDC7A4D2C679A9700C51F35 /* MvcDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CFDC7A632C679E9200C51F35 /* model */,
+				CFDC7A622C679E8500C51F35 /* controller */,
 				CFDC7A4E2C679A9700C51F35 /* AppDelegate.swift */,
 				CFDC7A502C679A9700C51F35 /* SceneDelegate.swift */,
-				CFDC7A522C679A9700C51F35 /* ViewController.swift */,
 				CFDC7A542C679A9700C51F35 /* Main.storyboard */,
 				CFDC7A572C679A9900C51F35 /* Assets.xcassets */,
 				CFDC7A592C679A9900C51F35 /* LaunchScreen.storyboard */,
 				CFDC7A5C2C679A9900C51F35 /* Info.plist */,
 			);
 			path = MvcDemo;
+			sourceTree = "<group>";
+		};
+		CFDC7A622C679E8500C51F35 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC7A522C679A9700C51F35 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CFDC7A632C679E9200C51F35 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC7A642C679EA200C51F35 /* Person.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +159,7 @@
 			files = (
 				CFDC7A532C679A9700C51F35 /* ViewController.swift in Sources */,
 				CFDC7A4F2C679A9700C51F35 /* AppDelegate.swift in Sources */,
+				CFDC7A652C679EA200C51F35 /* Person.swift in Sources */,
 				CFDC7A512C679A9700C51F35 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
